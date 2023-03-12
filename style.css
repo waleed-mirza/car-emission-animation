@@ -8,9 +8,10 @@ body{
 }
 
 /* css for car and animation starts here */
+
 section{
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,26 +19,26 @@ section{
 
 .container{
     width: 90%;
-    height: 99%;
+    height: 100%;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 .icon{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
     animation: moving 1s infinite;
+    position: relative;
 }
 .icon svg{
     position: absolute;
-    top: 15%;
-    left: 26%;
+    top: 35%; 
+    left: 30%;
+    width: 100%;
+    height: 100%;
     transform: scalex(-1);
-    color: #fff;
 }
 @keyframes moving{
     50%{
@@ -49,10 +50,10 @@ section{
 /* css for leaves and animation start here */
 
 .leaf{
-    width: 100%;
+    width: 65%;
     height: 100%;
     position: relative;
-    /* z-index: 1; */
+    z-index: 1;
 }
 .leaf i{
     color: rgb(97, 242, 24 );
@@ -60,8 +61,8 @@ section{
 }
 .leaf div{
     position: absolute;
-    top: 55%;
-    /* left: -50%; */
+    top: 89%;
+    left: 0%;
 }
 .leaf div:nth-child(1){
     opacity: 0;
@@ -157,7 +158,7 @@ section{
 @keyframes animate{
     0%{
         opacity: 0;
-        left: 0%;
+        left: -0%;
     }
     5%{
         opacity: 1;
@@ -551,28 +552,27 @@ section{
 
 .endless-container{
     width: 100%;
-    height: 50vh;
-    margin-top: -340px;
+    height: 5vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .endless{
     position: absolute;
-    margin-top: -10px;
-    width: 100%;
-    height: 200px;
+    width: 80%;
+    height: 2.5%;
     /* background: #c70039; */
-    transform-origin: bottom;
+    /* transform-origin: bottom; */
     transform-style: preserve-3d;
     transform: perspective(500px) rotateX(30deg);
 }
 .endless::before{
     content: '';
     width: 100%;
-    height: 20px;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 0%;
+    left: 0%;
     background:  linear-gradient(90deg, #fff 0%, #fff 70%, rgb(20,20,20) 70%, rgb(20,20,20) 100%);
     background-size: 120px;
     animation: road-animation .5s linear infinite;
@@ -587,3 +587,4 @@ section{
     }
 }
 /* End here */
+

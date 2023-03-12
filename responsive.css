@@ -1,0 +1,75 @@
+@media (max-width:560px) {
+    .icon svg{
+        position: absolute;
+        top: 40%; 
+        left: 12%;
+    }
+    .leaf div{
+        top: 90%;
+    }
+    .leaf i{
+        font-size: 12.5px;
+    }
+}
+
+@media (min-width:561px) and (max-width:720px) {
+    .icon svg{
+        top: 36%; 
+        left: 12%;
+    }
+    .leaf div{
+        top: 89%;
+    }
+    .leaf i{
+        font-size: 18px;
+    }
+    
+}
+@media (min-width:721px) and (max-width:840px) {
+    .icon svg{
+        left: 16.5%;
+    }
+    .leaf div{
+        top: 89%;
+    }
+    .leaf i{
+        font-size: 22.5px;
+    }
+
+}
+@media (min-width:841px) and (max-width:980px) {
+    .icon svg{
+        left: 18.5%;
+    }
+    .leaf div{
+        top: 89%;
+    }
+
+}
+@media (min-width:981px) and (max-width:1120px) {
+    .icon svg{
+        left: 26%;
+    }
+    .leaf div{
+        top: 89%;
+    }
+
+}
+@media (min-width:1121px) and (max-width:1280px) {
+    .icon svg{
+        left: 28%;
+    }
+    .leaf div{
+        top: 89%;
+    }
+    
+}
+@media (min-width:1480px){
+    
+    .icon svg{
+        left: 31.5%;
+    }
+    .leaf div{
+        top: 89%;
+    }
+}
